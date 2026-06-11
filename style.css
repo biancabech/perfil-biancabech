@@ -1,3 +1,46 @@
+:root {
+  --preto: rgba(229, 28, 28, 0);
+}
+
+@media(prefers-color-scheme: dark) {
+  :root {
+    --preto: rgba(255, 255, 255, 0.87);
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}
+
+[modo-light-dark="light"] {
+  color-scheme: light;
+  --preto: rgb(0, 0, 0, 0);
+}
+
+[modo-light-dark="dark"] {
+  color-scheme: dark;
+  --preto: rgba(255, 255, 255, 0.87);
+}
+
+.container {
+  margin: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 90px;
+  height: 25px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
 header img {
   width: 160px;
   height: 180px;
